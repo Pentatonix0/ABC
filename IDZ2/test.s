@@ -1,31 +1,115 @@
-.include "io_macros.s"      # Include the macros library for input/output operations
+.include "io_macros.s"      # Include macros for input/output operations
 
 .data
-    prompt_exp:        .asciz "expected: "            # String to display the expected value label
-    prompt_result:     .asciz "result:   "            # String to display the result label
-    prompt_test:       .asciz "\n_____TEST_____\n\n"  # Separator string for the test output
-    expected1:         .float 3.141592                # Expected value of pi for comparison (accurate to 6 decimal places)
-    prompt_test1:      .asciz "Test ¹1\n"            # Label for the first test case
+    prompt_exp_pi:        .asciz "Expected pi value: "
+    prompt_exp_acur:      .asciz "Expected accuracy (%): "
+    prompt_computed_pi:   .asciz "Computed pi value:   "
+    prompt_computed_acur: .asciz "Computed accuracy (%): "
+    prompt_test:          .asciz "\n_____TEST_____\n"
+
+    accuracy1:            .float 0.05
+    expected1:            .float 3.1427128
+    prompt_test1:         .asciz "\nTest ¹1\n"
+    
+    accuracy2:            .float 0.005
+    expected2:            .float 3.141736
+    prompt_test2:         .asciz "\nTest ¹1\n"
+    
+    accuracy3:            .float 0.00001
+    expected3:            .float 3.1427128
+    prompt_test3:         .asciz "\nTest ¹1\n"
 
 .text
 .globl test
 
 # Main test subroutine
 test:
-    print_string prompt_test   # Print the test separator header
+    print_string prompt_test   # Print test separator
 
-    # Test 1: Compare computed pi to the expected value
-    jal pi_via_nilakantha      # Call the function to compute pi using the Nilakantha series
-    fmv.s ft0, fa0             # Move the computed value of pi (fa0) into the temporary register ft0
+    #Test 1
+    # Load accuracy and call pi computation
+    la t0, accuracy1
+    flw fa0, 0(t0)
+    jal pi_via_nilakantha
     
-    la t0, expected1           # Load the address of the expected value (3.141592) into register t0
-    flw ft1, 0(t0)             # Load the expected value from memory into floating-point register ft1
-    print_string prompt_test1  # Print the label for test 1
-    print_string prompt_exp    # Print the label for "expected:"
-    print_float ft1            # Print the expected value of pi (3.141592) from register ft1
-    print_string prompt_result # Print the label for "result:"
-    print_float ft0            # Print the computed value of pi from register ft0 (the result of pi_via_nilakantha)
-   
-    # End of the test program
-    li a7, 10                   # System call to exit the program (exit code 10)
-    ecall                       # Call the operating system to terminate the program
+    fmv.s ft0, fa1             # Store computed pi
+    fmv.s ft1, fa2             # Store computed accuracy
+
+    # Load expected pi and accuracy
+    la t0, expected1
+    flw ft2, 0(t0)
+    la t0, accuracy1
+    flw ft3, 0(t0)
+
+    # Print expected and computed results
+    print_string prompt_test1
+    print_string prompt_exp_pi
+    print_float ft2            # Expected pi value
+    print_string prompt_exp_acur
+    print_float ft3            # Expected accuracy
+    
+    print_string prompt_computed_pi
+    print_float ft0            # Computed pi value
+    
+    print_string prompt_computed_acur
+    print_float ft1            # Computed accuracy
+    
+    #Test 2
+    # Load accuracy and call pi computation
+    la t0, accuracy2
+    flw fa0, 0(t0)
+    jal pi_via_nilakantha
+    
+    fmv.s ft0, fa1             # Store computed pi
+    fmv.s ft1, fa2             # Store computed accuracy
+
+    # Load expected pi and accuracy
+    la t0, expected2
+    flw ft2, 0(t0)
+    la t0, accuracy2
+    flw ft3, 0(t0)
+
+    # Print expected and computed results
+    print_string prompt_test2
+    print_string prompt_exp_pi
+    print_float ft2            # Expected pi value
+    print_string prompt_exp_acur
+    print_float ft3            # Expected accuracy
+    
+    print_string prompt_computed_pi
+    print_float ft0            # Computed pi value
+    
+    print_string prompt_computed_acur
+    print_float ft1            # Computed accuracy
+    
+    #Test 3
+    # Load accuracy and call pi computation
+    la t0, accuracy3
+    flw fa0, 0(t0)
+    jal pi_via_nilakantha
+    
+    fmv.s ft0, fa1             # Store computed pi
+    fmv.s ft1, fa2             # Store computed accuracy
+
+    # Load expected pi and accuracy
+    la t0, expected3
+    flw ft2, 0(t0)
+    la t0, accuracy3
+    flw ft3, 0(t0)
+
+    # Print expected and computed results
+    print_string prompt_test3
+    print_string prompt_exp_pi
+    print_float ft2            # Expected pi value
+    print_string prompt_exp_acur
+    print_float ft3            # Expected accuracy
+    
+    print_string prompt_computed_pi
+    print_float ft0            # Computed pi value
+    
+    print_string prompt_computed_acur
+    print_float ft1            # Computed accuracy
+
+    # End the program
+    li a7, 10                   # Exit system call
+    ecall
