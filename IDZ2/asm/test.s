@@ -13,11 +13,11 @@
     
     accuracy2:            .float 0.005
     expected2:            .float 3.141736
-    prompt_test2:         .asciz "\nTest ¹1\n"
+    prompt_test2:         .asciz "\nTest ¹2\n"
     
     accuracy3:            .float 0.00001
-    expected3:            .float 3.1427128
-    prompt_test3:         .asciz "\nTest ¹1\n"
+    expected3:            .float 3.1415925
+    prompt_test3:         .asciz "\nTest ¹3\n"
 
 .text
 .globl test
