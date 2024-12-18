@@ -1,0 +1,75 @@
+Duty Doctor 1 sends Patient 0 to Therapist
+Duty Doctor 2 sends Patient 1 to Therapist
+Therapist is treating Patient 0
+Therapist has finished treating Patient 0
+Therapist is treating Patient 1
+Duty Doctor 2 sends Patient 2 to Dentist
+Dentist is treating Patient 2
+Duty Doctor 1 sends Patient 5 to Surgeon
+Surgeon is treating Patient 5
+Therapist has finished treating Patient 1
+Surgeon has finished treating Patient 5
+Dentist has finished treating Patient 2
+Duty Doctor 1 sends Patient 4 to Therapist
+Duty Doctor 2 sends Patient 3 to Surgeon
+Therapist is treating Patient 4
+Surgeon is treating Patient 3
+Therapist has finished treating Patient 4
+Surgeon has finished treating Patient 3
+Duty Doctor 1 sends Patient 6 to Surgeon
+Duty Doctor 2 sends Patient 14 to Dentist
+Surgeon is treating Patient 6
+Dentist is treating Patient 14
+Surgeon has finished treating Patient 6
+Dentist has finished treating Patient 14
+Duty Doctor 2 sends Patient 16 to Surgeon
+Duty Doctor 1 sends Patient 10 to Dentist
+Surgeon is treating Patient 16
+Dentist is treating Patient 10
+Surgeon has finished treating Patient 16
+Dentist has finished treating Patient 10
+Duty Doctor 2 sends Patient 12 to Surgeon
+Duty Doctor 1 sends Patient 7 to Therapist
+Surgeon is treating Patient 12
+Therapist is treating Patient 7
+Surgeon has finished treating Patient 12
+Therapist has finished treating Patient 7
+Duty Doctor 2 sends Patient 13 to Therapist
+Duty Doctor 1 sends Patient 9 to Dentist
+Therapist is treating Patient 13
+Dentist is treating Patient 9
+Dentist has finished treating Patient 9
+Therapist has finished treating Patient 13
+Duty Doctor 1 sends Patient 8 to Surgeon
+Duty Doctor 2 sends Patient 17 to Therapist
+Surgeon is treating Patient 8
+Therapist is treating Patient 17
+Surgeon has finished treating Patient 8
+Therapist has finished treating Patient 17
+Duty Doctor 2 sends Patient 18 to Surgeon
+Duty Doctor 1 sends Patient 19 to Therapist
+Therapist is treating Patient 19
+Surgeon is treating Patient 18
+Surgeon has finished treating Patient 18
+Therapist has finished treating Patient 19
+Duty Doctor 2 sends Patient 20 to Dentist
+Dentist is treating Patient 20
+Duty Doctor 1 sends Patient 21 to Surgeon
+Surgeon is treating Patient 21
+Dentist has finished treating Patient 20
+Surgeon has finished treating Patient 21
+Duty Doctor 2 sends Patient 22 to Dentist
+Dentist is treating Patient 22
+Duty Doctor 1 sends Patient 23 to Therapist
+Therapist is treating Patient 23
+Dentist has finished treating Patient 22
+Therapist has finished treating Patient 23
+Duty Doctor 2 sends Patient 24 to Therapist
+Therapist is treating Patient 24
+Duty Doctor 1 sends Patient 15 to Dentist
+Dentist is treating Patient 15
+Therapist has finished treating Patient 24
+Dentist has finished treating Patient 15
+Duty Doctor 1 sends Patient 11 to Therapist
+Therapist is treating Patient 11
+Therapist has finished treating Patient 11
