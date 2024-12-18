@@ -1,45 +1,45 @@
-Duty Doctor 2 sends Patient 0 to Therapist
-Duty Doctor 1 sends Patient 2 to Dentist
-Dentist is treating Patient 2
+Duty Doctor 1 sends Patient 0 to Therapist
+Duty Doctor 2 sends Patient 1 to Dentist
+Dentist is treating Patient 1
 Therapist is treating Patient 0
 Therapist has finished treating Patient 0
-Dentist has finished treating Patient 2
-Duty Doctor 2 sends Patient 1 to Dentist
-Duty Doctor 1 sends Patient 3 to Surgeon
-Surgeon is treating Patient 3
-Dentist is treating Patient 1
 Dentist has finished treating Patient 1
+Duty Doctor 1 sends Patient 2 to Dentist
+Duty Doctor 2 sends Patient 3 to Surgeon
+Surgeon is treating Patient 3
+Dentist is treating Patient 2
 Surgeon has finished treating Patient 3
-Duty Doctor 2 sends Patient 7 to Dentist
-Duty Doctor 1 sends Patient 9 to Surgeon
-Dentist is treating Patient 7
-Surgeon is treating Patient 9
-Surgeon has finished treating Patient 9
-Dentist has finished treating Patient 7
-Duty Doctor 1 sends Patient 10 to Surgeon
-Surgeon is treating Patient 10
+Dentist has finished treating Patient 2
 Duty Doctor 2 sends Patient 4 to Dentist
+Duty Doctor 1 sends Patient 5 to Surgeon
 Dentist is treating Patient 4
+Surgeon is treating Patient 5
 Dentist has finished treating Patient 4
-Surgeon has finished treating Patient 10
-Duty Doctor 2 sends Patient 8 to Dentist
-Duty Doctor 1 sends Patient 11 to Dentist
-Dentist is treating Patient 8
-Dentist has finished treating Patient 8
-Dentist is treating Patient 11
-Duty Doctor 2 sends Patient 12 to Therapist
-Therapist is treating Patient 12
-Duty Doctor 1 sends Patient 5 to Therapist
-Dentist has finished treating Patient 11
-Therapist has finished treating Patient 12
-Therapist is treating Patient 5
+Surgeon has finished treating Patient 5
+Duty Doctor 2 sends Patient 6 to Surgeon
+Duty Doctor 1 sends Patient 7 to Dentist
+Dentist is treating Patient 7
+Surgeon is treating Patient 6
+Surgeon has finished treating Patient 6
+Dentist has finished treating Patient 7
+Duty Doctor 2 sends Patient 9 to Dentist
+Dentist is treating Patient 9
+Duty Doctor 1 sends Patient 10 to Dentist
+Dentist has finished treating Patient 9
+Dentist is treating Patient 10
+Duty Doctor 2 sends Patient 11 to Therapist
+Therapist is treating Patient 11
+Duty Doctor 1 sends Patient 13 to Therapist
+Dentist has finished treating Patient 10
+Therapist has finished treating Patient 11
+Therapist is treating Patient 13
 Duty Doctor 2 sends Patient 14 to Dentist
 Dentist is treating Patient 14
-Duty Doctor 1 sends Patient 6 to Surgeon
-Surgeon is treating Patient 6
-Therapist has finished treating Patient 5
-Dentist has finished treating Patient 14
-Surgeon has finished treating Patient 6
-Duty Doctor 2 sends Patient 13 to Therapist
-Therapist is treating Patient 13
 Therapist has finished treating Patient 13
+Duty Doctor 1 sends Patient 8 to Surgeon
+Surgeon is treating Patient 8
+Dentist has finished treating Patient 14
+Surgeon has finished treating Patient 8
+Duty Doctor 2 sends Patient 12 to Therapist
+Therapist is treating Patient 12
+Therapist has finished treating Patient 12
